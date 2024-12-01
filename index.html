@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriya_Poertfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/9a3713b9dd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1>Supriya <span>Sinha.</span></h1>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <ul id="sidemenu">
+                    <li><a href="#header" class=" active-link">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <!-- <li><a href="#services">Skills</a></li> -->
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Project</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>I’m Supriya Sinha, <br> a web developer from India.
+
+                </h1>
+                <p>Web Development&nbsp;| &nbsp;Electronics and Computer Science Engineer </p>
+                <br>
+                <p>
+                <h6>"404: Why fix bugs when you can comment them out?"</h6>
+                </p>
+            </div>
+            <div class="social-icons">
+
+                <a href="https://github.com/sinhasupriya3"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/supriyasinha3/"><i class="fab fa-linkedin"></i></a>
+                <br>
+                <!-- <a href="images/my-cv.pdf" download class="btn btn2"> CV</a> -->
+                <a href="images/my-cv.pdf" download class="btn "><i class="fa-solid fa-file-arrow-down"></i> CV</a>
+                <a href="#portfolio" class="btn "><i class="fa-regular fa-eye"></i> My Work</a>
+                <!-- <pre>
+                while(alive){
+                    eat();
+                    code();
+                    sleep();
+                    repeat(;)
+                }
+            </pre> -->
+
+            </div>
+        </div>
+    </div>
+    <!-- About Section -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user4.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="bio"> Hi, I’m Supriya – a web developer with a knack for turning ideas into sleek,
+                        functional designs. My journey started with curiosity and a love for tech, and now, I specialize
+                        in building responsive websites and intuitive interfaces. &nbsp; <br>
+
+                        <br> <span><i class="fa-solid fa-check"></i> Fun fact?</span> My first project was so colorful,
+                        it could blind a rainbow – but it taught me the power of clean design! <br><br>
+
+                        <i class="fa-solid fa-bolt"></i> When I’m not coding, I’m exploring tech trends, enjoying ramen,
+                        or sketching out my next big idea. <br><br> <i class="fa-solid fa-heart"></i> Let’s build
+                        something amazing together :)
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span >Languages and Database:</span><br>HTML5,CSS3,JavaScript,Python,MySql</li>
+                            <li><span>Technical Competency: </span><br>Web Development, Prompt Engineering, Software
+                                Engineering,UserExperience</li>
+                            <li><span>Tools :</span><br>Git,Visual Studio Code IDE,Pycharm,Figma</li>
+                            <li><span>Packages and Libraries:</span><br> Bootstrap, Matlab</li>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <!-- <li><span>App Development</span><br>Building Android/IOS apps</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>(Jun 2023-Jul 2023)</span><br>Role |Product Design and Development Intern
+                                (On-Site)</li>
+                            <li><span>(Aug 2023 - Jul 2024 · 1 yr.)</span><br>SOCIAL MEDIA HEAD | Entrepreneurship-Cell
+                            </li>
+                            <li><span>(Jul 2023 - Jan 2024 · 7 mos.)</span><br>HEAD OF PUBLIC RELATIONS | Electronics
+                                and Computer Science Student Assoc.</li>
+                            <li><span >(Jan 2023 – Dec 2023 · 1 yr.)</span><br>CONTENT HEAD | Raw-Ink College Magazine
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>BACHELOR OF ENGINEERING | UNIVERSITY OF MUMBAI</li>
+                            <P> <i><u><span class="course-work">Relevant Coursework:</span></u> </i>
+                            <p>Java, Python, Software Engineering, Web Technologies, Artificial Intelligence, Computer
+                                Networks, Data Warehousing and Mining, Internet of Things, Big Data Analytics, Cloud
+                                Computing, Communication Engineering, Computer Organization and Architecture, DSA, DBMS,
+                                Professional Communication and Ethics</P>
+                            <li><span>2019-2021</span><br>XII (CBSE) | D.A.V. PUBLIC SCHOOL| Jharkhand</li>
+                            <li><span>2018-2019</span><br>X (CBSE) | SEVEN SQUARE ACADEMY | Mumbai</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills Section -->
+    <!-- <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Skills</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>Prompt Engineering</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                
+            </div>
+        </div>
+    </div> -->
+    <!-- Services Section -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>Web Design</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>UI/UX Design</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fab fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor voluptatum ab rem asperiores
+                        aperiam repudiandae eum! Deserunt dolores neque repudiandae quas voluptatum, aliquam culpa
+                        reprehenderit? Iste deleniti ipsum provident impedit!</p> -->
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/InstaClone project.png" alt="">
+                    <div class="layer">
+                        <h3>Instagram-Clone</h3>
+                        <p>Welcome to InstaClone, where CSS and HTML meet to recreate the enchanting world of Instagram.
+                            Experience the thrill of browsing captivating photos, following friends, and sharing your
+                            visual narratives. InstaClone is a repository that showcases the power of front-end
+                            technologies in crafting engaging user experiences.</p>
+                        <a href="https://github.com/sinhasupriya3/InstaClone"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Genius Bot Display.png" alt="">
+                    <div class="layer">
+                        <h3>Genius Bot: Your AI-Powered Chat Companion.</h3>
+                        <p>Genius Bot: Your AI-Powered Chat Companion. Engage in intelligent conversations, explore a wide range of topics, and experience the power of Python and Streamlit in this interactive chatbot project</p>
+                        <a href="https://github.com/sinhasupriya3/genius-bot-ai-assistant"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <!-- <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis possimus repellendus, sequi
+                            eos odio aliquam sit, distinctio necessitatibus iure, fugit pariatur. Suscipit repellendus
+                            et modi sapiente doloribus expedita, perspiciatis error?</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div> -->
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- Conatct Section -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>sinhasupriya.492@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i>+91 9142133829</p>
+                    <div class="social-icons">
+                        <!-- <a href="https://facebook.com"><i class="fab fa-facebook"></i></a> -->
+                        <!-- <a href="https://facebook.com"><i class="fab fa-twitter-square"></i></a> -->
+                        <a href="https://github.com/sinhasupriya3"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/supriyasinha3/"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="your Name" required>
+                        <input type="email" name="email" placeholder="your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright section -->
+        <div class="copyright">
+            <p>Copyright © Supriya,Made with <i class="fas fa-heart"> </i> by </i>Supriya Sinha</p>
+        </div>
+        <p></p>
+    </div>
+
+
+
+
+    <script>
+        // Select all tab links and tab contents
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            // Remove active state from all tab links and hide all tab contents
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            // Add active state to the clicked tab link
+            event.currentTarget.classList.add("active-link");
+
+            // Show the content of the clicked tab
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu")
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+
+        }
+    </script>
+
+
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbw5gmewBmdbxSYcdV30sqEyhUQxP8yxS36d1NTPN-89Njw3fRI7rJDqVF6C_WBktTev_w/exec'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+<!-- Add this button to your HTML -->
+<!-- Button for scrolling to the top -->
+<button id="myBtn" onclick="topFunction()">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+
+
+<script>
+// Get the button
+let mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+</body>
+
+</html>
